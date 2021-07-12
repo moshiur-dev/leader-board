@@ -6,12 +6,15 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .container{
     background-color:#fff;
     width:870px;
     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
 }
 .top-players{
     margin-bottom: 30px;
@@ -74,3 +77,29 @@ hr{
     font-size: 16px;
     color:#562EFF
 }
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color:#FFC014
+}
+.fa-star.empty{
+    color:#AEAEAE
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course-info {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+
+
